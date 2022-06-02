@@ -55,7 +55,7 @@ jobs:
 
     # This action.
       - name: Enable tutor plugin - Xqueue
-        uses: openedx-actions/tutor-enable-plugin-xqueue
+        uses: openedx-actions/tutor-enable-plugin-xqueue@v0.0.1
         if: ${{ env.ENABLE_XQUEUE == 'true' }}
         with:
           namespace: openedx-prod
