@@ -40,9 +40,9 @@ jobs:
       - name: Configure Github workflow environment
         uses: openedx-actions/tutor-k8s-init@v0.0.1
 
-    # This action.
-    - name: Enable tutor plugin - Xqueue
-      uses: openedx-actions/tutor-enable-plugin-xqueue@v0.0.1
-      with:
-        namespace: openedx-prod
+      # This action.
+      - name: Enable tutor plugin - Xqueue
+        uses: openedx-actions/tutor-enable-plugin-xqueue@v0.0.1
+        with:
+          namespace: openedx-prod
 ```
