@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # usage: Use tutor to enable the Open edX Xqueue service plugin
 #------------------------------------------------------------------------------
-name: enable Xqueue plugin for tutor
+name: Open edX Tutor k8s enable Xqueue plugin
 description: Github Action to install and enable the Tutor plugin - Open edX Xqueue service
 branding:
   icon: 'cloud'
