@@ -42,7 +42,7 @@ jobs:
 
       # This action.
       - name: Enable tutor plugin - Xqueue
-        uses: openedx-actions/tutor-enable-plugin-xqueue@v0.0.1
+        uses: openedx-actions/tutor-enable-plugin-xqueue@v0.0.2
         with:
           namespace: openedx-prod
 ```
