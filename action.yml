@@ -11,6 +11,11 @@ inputs:
     description: 'The Kubernetes namespace to which the Open edX platform environment will be deployed. Example: openedx-prod'
     required: true
     type: string
+  tutor-xqueue-version:
+    description: 'The version of tutor-xqueue to install'
+    required: false
+    default: latest
+    type: string
 runs:
   using: "composite"
   steps:
@@ -32,7 +37,7 @@ runs:
     - name: Enable the Xqueue plugin
       id: install-plugin
       shell: bash
-      run: pip install tutor-xqueue
+      run: pip install tutor-xqueue${{ inputs.tutor-xqueue-version != 'latest' && format('=={0}', inputs.tutor-xqueue-version) || '' }}
 
     - name: Enable the Xqueue plugin
       id: save-config

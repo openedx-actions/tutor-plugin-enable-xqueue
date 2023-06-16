@@ -49,10 +49,12 @@ jobs:
       #
 
       # This action.
+      # tutor-xqueue-version is an optional input
       - name: Enable tutor plugin - Xqueue
         uses: openedx-actions/tutor-plugin-enable-xqueue@v1
         with:
           namespace: openedx-prod
+          tutor-xqueue-version: latest
 
       #
       # ... more steps to deploy your Open edX instance to k8s ...
